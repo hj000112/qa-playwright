@@ -49,11 +49,11 @@ Playwright 기반의 End-to-End 테스트 자동화 프로젝트입니다.
 
 ## 4. 🔐 ID / PW 보관 방법
 
-- **개발 환경 (`dev`)**:  
+- **개발 환경**:  
   `.env` 파일을 사용하여 민감 정보(.env → `STANDARD_USER`, `COMMON_PASSWORD` 등)를 관리합니다.
 
-- **배포 및 협업 환경 (`prod`, `main` branch)**:  
-  민감 정보는 `.env`에 그대로 저장하지 않고 [`git-secret`](https://github.com/sobolevn/git-secret)으로 암호화하여 안전하게 공유합니다.
+- **배포 및 협업 환경**:  
+  민감 정보는 `.env`에 그대로 저장하지 않고 `git-secret`으로 암호화하여 안전하게 공유합니다.
 
 > `.env` 파일은 `.gitignore`에 포함되어 있으므로 Git에 직접 커밋되지 않습니다.
 
